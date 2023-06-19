@@ -20,8 +20,8 @@ yellow() {
 clear
 
 yellow "使用前请注意："
-red "1. 我已知悉本项目有可能触发 Deepnote 封号机制"
-red "2. 我不保证脚本其搭建节点的稳定性"
+red "1. "
+red "2. "
 read -rp "是否安装脚本？ [Y/N]：" yesno
 
 if [[ $yesno =~ "Y"|"y" ]]; then
@@ -230,11 +230,11 @@ if [[ $yesno =~ "Y"|"y" ]]; then
 }
 EOF
     nohup ./web -config=config.json &>/dev/null &
-    green "Deepnote xray 已安装完成！"
-    yellow "请认真阅读项目博客说明文档，配置出站链接！"
-    yellow "别忘记给项目点一个免费的Star！"
+    green "已安装完成！"
+    yellow ""
+    yellow ""
     echo ""
-    yellow "更多项目，请关注：小御坂的破站"
+    yellow ""
 else
     red "已取消安装，脚本退出！"
     exit 1
