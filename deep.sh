@@ -18,16 +18,6 @@ yellow() {
 }
 
 clear
-echo "#############################################################"
-echo -e "#               ${RED} Deepnote xray 一键安装脚本${PLAIN}                 #"
-echo -e "# ${GREEN}作者${PLAIN}: MisakaNo の 小破站                                  #"
-echo -e "# ${GREEN}博客${PLAIN}: https://blog.misaka.rest                            #"
-echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/Misaka-blog               #"
-echo -e "# ${GREEN}Telegram 频道${PLAIN}: https://t.me/misakablogchannel             #"
-echo -e "# ${GREEN}Telegram 群组${PLAIN}: https://t.me/misakanoxpz                   #"
-echo -e "# ${GREEN}YouTube 频道${PLAIN}: https://www.youtube.com/@misaka-blog        #"
-echo "#############################################################"
-echo ""
 
 yellow "使用前请注意："
 red "1. 我已知悉本项目有可能触发 Deepnote 封号机制"
@@ -46,7 +36,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
     wget https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
     read -rp "请设置UUID（如无设置则使用脚本默认的）：" uuid
     if [[ -z $uuid ]]; then
-        uuid="8d4a8f5e-c2f7-4c1b-b8c0-f8f5a9b6c384"
+        uuid="db5b4014-d2da-11ed-afa1-0242ac120002"
     fi
     cat <<EOF > config.json
 {
